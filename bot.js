@@ -11,6 +11,8 @@ const fetchVideoInfo = require('youtube-info');
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
 const prefix = '*';
 
+client.on('ready', () => {console.log(`Logged: ${client.user.tag}`)});
+
 client.on('message', message => {
 	if(message.content.startsWith(prefix + 'قرآن')) {
 		message.delete();
