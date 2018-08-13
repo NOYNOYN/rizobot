@@ -7,7 +7,7 @@ const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-const prefix = 'R';
+const prefix = 'RR';
 client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
 });
@@ -239,7 +239,7 @@ function isYoutube(str) {
       ايقاف الاغنية مؤقتا 
     **${prefix}resume**
        امر تكملة الاغنية
-    **Rmove**
+    **RRmove**
    سحب البوت او ادخال البوت الى روم
    
    صاحب البوت :<@452191687159185409>
@@ -257,7 +257,7 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "219223938629107713") return;
+  if (message.author.id !== "452191687159185409") return;
 
   
   if (message.content.startsWith(prefix + 'setwatch')) {
